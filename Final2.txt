@@ -1,0 +1,2870 @@
+
+<!DOCTYPE HTML>
+<html>
+ <head>
+<meta charset=utf-8>
+<style>
+#ApercentDiv    {
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #f70c0c; 
+}
+#FinVarA{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border: 2px solid #f21b29;
+}
+#FinVarB{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border: 2px solid #f21b29;
+}
+#FinVarC{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border: 2px solid #f21b29;
+}
+#FMDiv{
+    width:40px;
+    height:40px;
+    border: 2px solid #f21b29;
+}
+#AClicksDiv{
+    width:40px;
+    height:40px;
+    border: 2px solid #8db327;
+}
+#FinVariableDiv{
+    width:40px;
+    height:40px;
+    border: 2px solid #273eb3;
+}
+#CounterClicksNumToShow{
+    width: 100px;
+    height: 20px;
+    border: 2px solid blue;
+}
+#CounterClicksClicks{
+    width: 100px;
+    height: 20px;
+    border: 2px solid green;
+}
+#CounterClicks{
+    width: 100px;
+    height: 20px;
+    border: 2px solid yellow;
+}
+#CounterRandom{
+    width: 100px;
+    height: 20px;
+    border: 2px solid red;
+}
+#DivsToHide{
+    visibility: hidden;
+}
+#DivsToHide2{
+  visibility: hidden;
+}
+#AdjNshow{
+    width: 200px;
+    height: 50px;
+    border: 2px dashed  #3c41c9; 
+}
+#VNshow{
+    width: 200px;
+    height: 50px;
+    border: 2px dashed  #3c41c9;     
+}
+#NNshow{
+    width: 200px;
+    height: 50px;
+    border: 2px dashed  #3c41c9;     
+}
+#ishow{
+    width: 200px;
+    height: 50px;
+    border: 2px dashed  #3c41c9;    
+}
+#Main3Results{
+    width: 100%;
+    height: auto;
+}
+#Main3{
+    position: absolute;
+    width:80%;
+    height: fit-content;
+    top:35%;
+margin-left: 10%;
+margin-right: 10%;
+    background-color: #71ca21;
+    visibility: hidden;
+    border-radius: 10%/50%;
+    padding: 4%;
+}
+#ABC{
+    position: absolute;
+    width:200px;
+    height: 250px;
+    right:20%;
+    top:20%;
+    border: 2px solid green;
+    /*visibility: hidden;*/
+}
+#AApercentage{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border: 2px solid #3c41c9;
+}
+#BBpercentage{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border: 2px solid #3c41c9;
+}
+#CCpercentage{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border: 2px solid #3c41c9;
+}
+#AA{
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #3c41c9;
+}
+#AA_AnsCor{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#AA_AnsWr{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#AA_AnsTot{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#AA_Main2Quant{
+        display: inline-block;
+    width:30px;
+    height: 20px;
+    border: 1px solid black;
+}
+#BB_Main2Quant{
+    display: inline-block;
+    width:30px;
+    height: 20px;
+    border: 1px solid black;
+}
+#CC_Main2Quant{
+        display: inline-block;
+    width:30px;
+    height: 20px;
+    border: 1px solid black;
+}
+#BB{
+display: inline-block;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #ebd510;
+}
+#BB_AnsCor{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#BB_AnsWr{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#BB_AnsTot{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#CC{
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #f70c0c; 
+}
+#CC_AnsCor{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#CC_AnsWr{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+#CC_AnsTot{
+        display: inline-block;
+    width:20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.NounEng{
+position: absolute;
+padding-top: 4%;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+animation-name: NounEngKeyFrames;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+}
+@keyframes NounEngKeyFrames {
+    0% {opacity:100%;}
+    5% {opacity:100%;}
+    10% {opacity:100%;}
+    15% {opacity:75%;}
+    20% {opacity:50%;}
+    25% {opacity:25%;}
+    30% {opacity:0%;}
+    35% {opacity:0%;}
+    40% {opacity:0%;}
+    45% {opacity:0%;}
+    50% {opacity:0%;}
+    55% {opacity:0%;}
+    60% {opacity:0%;}
+    65% {opacity:0%;}
+    70% {opacity:0%;}
+    75% {opacity:25%;}
+    80% {opacity:50%;}
+    85% {opacity:75%;}
+    90% {opacity:100%;}
+    95% {opacity:100%;}
+    100% {opacity:100%;}
+}
+.NounRus{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 4%;
+animation-name: NounRusKeyFrames;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+opacity:0;
+}
+@keyframes NounRusKeyFrames {
+    0% {opacity:0%;}/*1*/
+    5% {opacity:0%;}/*2*/
+    10% {opacity:0%;}/*3*/
+    15% {opacity:25%;}/*4*/
+    20% {opacity:50%;}/*5*/
+    25% {opacity:75%;}/*6*/
+    30% {opacity:100%;}/*7*/
+    35% {opacity:100%;}/*8*/
+    40% {opacity:100%;}/*9*/
+    45% {opacity:100%;}/*10*/
+    50% {opacity:100%;}/*11*/
+    55% {opacity:100%;}/*12*/
+    60% {opacity:100%;}/*13*/
+    65% {opacity:100%;}/*14*/
+    70% {opacity:100%;}/*15*/
+    75% {opacity:75%;}/*16*/
+    80% {opacity:50%;}/*17*/
+    85% {opacity:25%;}/*18*/
+    90% {opacity:0%;}/*19*/
+    95% {opacity:0%;}/*20*/
+    100% {opacity:0%;}/*21*/    
+}
+.VerbEng{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 4%;
+animation-name: VerbEngKeyFrames;
+animation-duration: 20s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes VerbEngKeyFrames {
+    0% {opacity:100%;}
+    5% {opacity:100%;}
+    10% {opacity:100%;}
+    15% {opacity:75%;}
+    20% {opacity:50%;}
+    25% {opacity:25%;}
+    30% {opacity:0%;}
+    35% {opacity:0%;}
+    40% {opacity:0%;}
+    45% {opacity:0%;}
+    50% {opacity:0%;}
+    55% {opacity:0%;}
+    60% {opacity:0%;}
+    65% {opacity:0%;}
+    70% {opacity:0%;}
+    75% {opacity:25%;}
+    80% {opacity:50%;}
+    85% {opacity:75%;}
+    90% {opacity:100%;}
+    95% {opacity:100%;}
+    100% {opacity:100%;}
+}
+.VerbRus{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 4%;
+animation-name: VerbRusKeyFrames;
+animation-duration: 20s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+opacity:0;
+}
+@keyframes VerbRusKeyFrames {
+    0% {opacity:0%;}/*1*/
+    5% {opacity:0%;}/*2*/
+    10% {opacity:0%;}/*3*/
+    15% {opacity:25%;}/*4*/
+    20% {opacity:50%;}/*5*/
+    25% {opacity:75%;}/*6*/
+    30% {opacity:100%;}/*7*/
+    35% {opacity:100%;}/*8*/
+    40% {opacity:100%;}/*9*/
+    45% {opacity:100%;}/*10*/
+    50% {opacity:100%;}/*11*/
+    55% {opacity:100%;}/*12*/
+    60% {opacity:100%;}/*13*/
+    65% {opacity:100%;}/*14*/
+    70% {opacity:100%;}/*15*/
+    75% {opacity:75%;}/*16*/
+    80% {opacity:50%;}/*17*/
+    85% {opacity:25%;}/*18*/
+    90% {opacity:0%;}/*19*/
+    95% {opacity:0%;}/*20*/
+    100% {opacity:0%;}/*21*/
+}
+.AdjEng{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 4%;
+animation-name: AdjEngKeyFrames;
+animation-duration: 20s;
+animation-delay: 4s;
+animation-iteration-count: infinite;
+}
+@keyframes AdjEngKeyFrames {
+    0% {opacity:100%;}
+    5% {opacity:100%;}
+    10% {opacity:100%;}
+    15% {opacity:75%;}
+    20% {opacity:50%;}
+    25% {opacity:25%;}
+    30% {opacity:0%;}
+    35% {opacity:0%;}
+    40% {opacity:0%;}
+    45% {opacity:0%;}
+    50% {opacity:0%;}
+    55% {opacity:0%;}
+    60% {opacity:0%;}
+    65% {opacity:0%;}
+    70% {opacity:0%;}
+    75% {opacity:25%;}
+    80% {opacity:50%;}
+    85% {opacity:75%;}
+    90% {opacity:100%;}
+    95% {opacity:100%;}
+    100% {opacity:100%;}
+}
+.AdjRus{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 4%;
+animation-name: AdjRusKeyFrames;
+animation-duration: 20s;
+animation-delay: 4s;
+animation-iteration-count: infinite;
+opacity:0;
+}
+@keyframes AdjRusKeyFrames {
+    0% {opacity:0%;}/*1*/
+    5% {opacity:0%;}/*2*/
+    10% {opacity:0%;}/*3*/
+    15% {opacity:25%;}/*4*/
+    20% {opacity:50%;}/*5*/
+    25% {opacity:75%;}/*6*/
+    30% {opacity:100%;}/*7*/
+    35% {opacity:100%;}/*8*/
+    40% {opacity:100%;}/*9*/
+    45% {opacity:100%;}/*10*/
+    50% {opacity:100%;}/*11*/
+    55% {opacity:100%;}/*12*/
+    60% {opacity:100%;}/*13*/
+    65% {opacity:100%;}/*14*/
+    70% {opacity:100%;}/*15*/
+    75% {opacity:75%;}/*16*/
+    80% {opacity:50%;}/*17*/
+    85% {opacity:25%;}/*18*/
+    90% {opacity:0%;}/*19*/
+    95% {opacity:0%;}/*20*/
+    100% {opacity:0%;}/*21*/
+}
+.NTranlate{
+    position: relative;
+    width: 96%;
+    height: 40px;
+    border: 2px solid #d7f5dc;
+    box-shadow: inset 0 0 5px 2px #092eb5;
+}
+.VTranlate{
+    position: relative;
+    width: 96%;
+    height: 40px;
+    border: 2px solid #d7f5dc;
+    box-shadow: inset 0 0 5px 2px #092eb5;
+    
+}
+.AdjTranlate{
+    position: relative;
+    width: 96%;
+    height: 40px;
+    border: 2px solid #d7f5dc;
+    box-shadow: inset 0 0 5px 2px #092eb5;
+    
+}
+#start1{
+    font-weight: 750;
+    width: 80px;
+    height: 40px;
+background-color: #a4eb0c;
+box-shadow: inset 0 0 3px 2px #092eb5;
+}
+#NextButton {
+        font-weight: 750;
+        width: 80px;
+    height: 40px;
+background-color: #a4eb0c;
+box-shadow: inset 0 0 3px 2px #092eb5;
+}
+#Restart {
+        font-weight: 750;
+        width: 80px;
+    height: 40px;background-color: #a4eb0c;
+box-shadow: inset 0 0 3px 2px #092eb5;
+}
+#show1{
+    width: 20px;
+    height: 20px;
+    border:2px solid black;
+    /*visibility: hidden;*/
+}
+#show2 {
+    /*visibility: hidden;*/
+}
+#show3{
+    width: 20px;
+    height: 20px;
+    border:2px solid green;
+    /*visibility: hidden;*/
+}
+#zero{
+    /*visibility: hidden;*/
+}
+#showBlock{
+position: absolute;
+width: 300px;
+text-align: center;
+margin: 10% 40%;
+border: 2px solid green;
+padding-top: 2%;
+padding-bottom: 2%;
+background-color: #67809f;
+}
+@keyframes showBlockAnim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+table {
+         border-spacing: 20px 10px;
+        border-collapse: separate;
+        text-align: center;   
+}
+td {
+    text-align: center;
+}
+        #Container1{
+        position: absolute;
+        width:750px;
+        height: auto;
+        left:10%;
+        background-color: rgba(165, 196, 37, 0.3);
+        border: 2px solid  #a525c4;
+        visibility: hidden;
+        }
+        #Container2{
+            position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid black;
+        visibility: hidden;
+        }
+        #Container3{
+            position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid blue;
+        visibility: hidden;
+        }
+        #Container4{
+        position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid blue;
+        visibility: hidden;
+        }
+        #Container5{
+        position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid blue;
+        visibility: hidden;
+        }
+        #Container6{
+        position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid blue;
+        visibility: hidden;
+        }
+        #Container7{
+        position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid blue;
+        visibility: hidden;
+        }
+        #Container8{
+        position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid blue;
+        visibility: hidden;
+        }
+        #Container9{
+        position: absolute;
+        width:750px;
+        height: auto;
+                left:10%;
+        text-align: center;
+        border: 2px solid blue;
+        visibility: hidden;
+        }
+.nounclass{
+    width:220px;
+    height: 40px;
+    background: linear-gradient(45deg, #a6e8f7, #a6f7ee, #a6f7b3);
+    font-family: Helvetica, sans-serif;
+    font-size: 1.8em;
+    border: 2px solid #14647d;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 3px #743c9e;
+}
+.verbclass{
+    width:220px;
+    height: 40px;
+    background: linear-gradient(45deg, #b6f7a6, #7af0b1, #f7a6a6);
+    font-family: Andale Mono, monospace;
+    font-size: 1.8em;
+    border: 2px solid #7af08e;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 3px #743c9e;
+}
+.adjclass{
+    width:220px;
+    height: 40px;
+    background: linear-gradient(45deg, #bcd4a9, #d4c8a9, #d4aca9);
+    font-family: Georgia, serif;
+    font-size: 1.8em;
+    border: 2px solid #7adaf0;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 3px #743c9e;
+}
+#AnswersMain{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    right:1%;
+    top:20%;
+    visibility: hidden;
+    border: 2px solid #7cf520;
+    
+}
+#AnswersCorrectText{
+    width:100%;
+    height: 5%;
+}
+#AnswersCorrect{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    border: 2px dotted  black;    
+}
+#AnswersWrongText{
+    width:100%;
+    height: 5%;
+}
+#AnswersWrong{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    border: 2px dotted  black;    
+}
+#AnswersTotalText{
+    width:100%;
+    height: 10%;
+}
+#AnswersTotal{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    border: 2px dotted  black;    
+}
+#TextFinalEng{
+    padding-top: 5%;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px dotted  black;
+    background-color: #67db80;
+}
+#TextFinal1{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 5%;
+    border: 2px dotted  black;
+}
+#TextFinal2{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 5%;
+    border: 2px dotted  black;
+}
+#TextFinal3{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 5%;
+    border: 2px dotted  black;
+}
+#Main1{
+    position: absolute;
+    width: 100%;
+    height: 100;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+#Main2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+z-index: 1;
+}
+#TextFinalMain{
+    position: relative;
+    background-color: #143e7d;
+    text-align: center;
+    width: 550px;
+    top:10%;
+    height: auto;
+margin: 0 auto;
+padding-top: 5%;
+padding-bottom: : 5%;
+    border: 2px dashed green;
+    visibility: hidden;
+}
+#ShowArrayShuffle{
+    width: 150px;
+    height: 50px;
+    border: 2px solid blue;
+    visibility: hidden;
+}
+#Number1{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#Number2{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#Number3{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#NumberMain{
+    display: inline-block;
+    width: 250px;
+    min-height: 100px;
+    border: 2px solid red;
+visibility: hidden;
+    
+}#TextMain_3Vars{
+     display: inline-block;
+    width: 550px;
+    height: auto;
+visibility: hidden;
+}
+#Text1_3Vars{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#Text2_3Vars{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#Text3_3Vars{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#TextMain{
+     display: inline-block;
+    width: 550px;
+    height: auto;
+visibility: hidden;
+}
+#Text1{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#Text2{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#Text3{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+#MainDiv{
+    display: inline-block;
+    width: 250px;
+    min-height: 100px;
+    border: 2px solid red;
+    visibility: hidden;
+}
+#MainDiv2{
+    display: inline-block;
+    width: 250px;
+    min-height: 100px;
+    border: 2px solid red;
+    visibility: hidden;
+}
+</style>
+</head>
+<html>
+<body>
+    <div id="Main1">
+<div id="Container1">
+    <table>
+    <tr>
+	<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+    </tr>
+    <tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="Container2">
+    <table>
+        <tr>
+	<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+        
+</div>
+<div id="Container3">
+    <table>
+        <tr>
+	<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="Container4">
+    <table>
+        <tr>
+<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="Container5">
+    <table>
+        <tr>
+<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="Container6">
+    <table>
+        <tr>
+<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="Container7">
+    <table>
+        <tr>
+<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="Container8">
+    <table>
+        <tr>
+<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="Container9">
+    <table>
+        <tr>
+<th><div class="NTranlate"><div class="NounEng">Noun</div><div class="NounRus">Существительное</div></div></th>
+	<th><div class="VTranlate"><div class="VerbEng">Verb</div><div class="VerbRus">Глагол</div></div></th>
+	<th><div class="AdjTranlate"><div class="AdjEng">Adjective</div><div class="AdjRus">Прилагательное</div></div></th>
+
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+<tr>
+	<td> <button class="nounclass">noun</button></td>
+	<td> <button class="verbclass">verb</button></td>
+	<td> <button class="adjclass">adjective</button></td>
+</tr>
+        </table>
+</div>
+<div id="showBlock">
+<button id="start1" onclick="start()">Start</button>
+<button id="NextButton" onclick="NextButtonFunction()">Next</button>
+<button id="Restart" onclick="Restart()">Restart</button>
+</div>
+<div id="DivsToHide">
+<div id=show1></div>
+<div id=show2></div>
+<div id=show3></div>show3
+<div id="zero">1</div>
+<div id="ishow">ishow</div>
+<div id="NNshow"></div>
+<div id="VNshow"></div>
+<div id="AdjNshow"></div>
+</div>
+
+<div id="AnswersMain">
+        <div id="AnswersCorrectText">Правильных ответов</div><br>
+    <div id="AnswersCorrect"></div>
+        <div id="AnswersWrongText">Неправильных ответов</div><br>
+    <div id="AnswersWrong"></div>
+        <div id="AnswersTotalText">Всего попыток</div><br>
+    <div id="AnswersTotal"></div><br>CounterClicks
+    <div id="CounterClicks"></div><br>CounterRandom
+    <div id="CounterRandom"></div><br>CounterClicksClicks
+    <div id="CounterClicksClicks"></div><br>CounterClicksNumToShow
+    <div id="CounterClicksNumToShow">5</div><br>
+</div><br>
+<div id="DivsToHide2">
+<div id="ABC">
+    AA<div id="AA"><div id="AA_AnsCor"></div><div id="AA_AnsWr"></div><div id="AA_AnsTot"></div><div id="AA_Main2Quant"></div><div id="AApercentage"></div><div id="FinVarA"></div></div><br>
+    BB<div id="BB"><div id="BB_AnsCor"></div><div id="BB_AnsWr"></div><div id="BB_AnsTot"></div><div id="BB_Main2Quant"></div><div id="BBpercentage"></div><div id="FinVarB"></div></div><br>
+    CC<div id="CC"><div id="CC_AnsCor"></div><div id="CC_AnsWr"></div><div id="CC_AnsTot"></div><div id="CC_Main2Quant"></div><div id="CCpercentage"></div><div id="FinVarC"></div></div><br>
+    Apercent<div id="ApercentDiv"></div>
+</div>
+<br>
+<div id="TextMain">
+<div id="Text1"></div>
+<div id="Text2"></div>
+<div id="Text3"></div>
+</div>
+<div id="TextMain_3Vars">
+<div id="Text1_3Vars"></div>
+<div id="Text2_3Vars"></div>
+<div id="Text3_3Vars"></div>
+</div>
+<div id="NumberMain">
+<div id="Number1"></div>
+<div id="Number2"></div>
+<div id="Number3"></div>
+</div>
+<div id="ShowArrayShuffle"></div>
+</div>
+</div>
+<div id="Main2">
+
+<div id="TextFinalMain">
+    <div id="TextFinalEng"></div><br>
+    <button id="TextFinal1" onclick="finalbutton1()"></button>
+    <button id="TextFinal2" onclick="finalbutton2()"></button>
+    <button id="TextFinal3" onclick="finalbutton3()"></button>
+</div>
+
+</div>
+<div id="Main3">
+    <div id="Main3Results">Here the final message</div>
+    <div id="FinVar_Clicks_FM">
+    FinVariable<div id="FinVariableDiv"></div>
+    A_Clicks<div id="AClicksDiv"></div>
+    FM<div id="FMDiv"></div>
+    </div>
+</div>
+<script>
+
+let n=[];
+let v=[];
+let adj=[];
+let nn=[];
+let vv=[];
+let adjadj=[];
+let ArrayContainerShow=[];
+var AnsCor=0;
+var AnsWr=0;
+var AnsTot=0;
+var AA_AnsCorrect=0;
+var AA_AnsWrong=0;
+var AA_AnsTotal=0;
+var BB_AnsCorrect=0;
+var BB_AnsWrong=0;
+var BB_AnsTotal=0;
+var CC_AnsCorrect=0;
+var CC_AnsWrong=0;
+var CC_AnsTotal=0;
+var show_3=0;
+var CCVar=0;
+var CCVarInitial=CounterClicksNumToShow.innerHTML;
+var AnswersTotalTextVar=0;
+var A_TotalVar=0;
+var B_TotalVar=0;
+var C_TotalVar=0;
+var Main2QuantVarAA=0;
+var Main2QuantVarBB=0;
+var Main2QuantVarCC=0;
+
+
+n[1]="train";
+v[1]="allow";
+adj[1]="adult";
+n[2]="umbrella";
+v[2]="appear";
+adj[2]="big";
+n[3]="text";
+v[3]="book";
+adj[3]="brown";
+n[4]="team";
+v[4]="manage";
+adj[4]="complete";
+n[5]="action";
+v[5]="print";
+adj[5]="difficult";
+n[6]="neighbour";
+v[6]="apply";
+adj[6]="expensive";
+n[7]="nothing";
+v[7]="raise";
+adj[7]="free";
+n[8]="water";
+v[8]="reduce";
+adj[8]="hungry";
+n[9]="village";
+v[9]="realize";
+adj[9]="negative";
+n[10]="century";
+v[10]="close";
+adj[10]="black";
+n[11]="desk";
+v[11]="pay";
+adj[11]="cool";
+n[12]="life";
+v[12]="report";
+adj[12]="busy";
+n[13]="north";
+v[13]="search";
+adj[13]="dirty";
+n[14]="waiter";
+v[14]="ski";
+adj[14]="famous";
+n[15]="husband";
+v[15]="teach";
+adj[15]="amazing";
+n[16]="window";
+v[16]="provide";
+adj[16]="blue";
+n[17]="light";
+v[17]="collect";
+adj[17]="happy";
+n[18]="tree";
+v[18]="shake";
+adj[18]="delicious";
+n[19]="island";
+v[19]="arrange";
+adj[19]="important";
+n[20]="table";
+v[20]="solve";
+adj[20]="fast";
+n[21]="job";
+v[21]="ride";
+adj[21]="cheap";
+n[22]="space";
+v[22]="recognize";
+adj[22]="bad";
+n[23]="rain";
+v[23]="throw";
+adj[23]="healthy";
+n[24]="key";
+v[24]="cry";
+adj[24]="final";
+n[25]="picture";
+v[25]="use";
+adj[25]="bored";
+n[26]="lion";
+v[26]="sleep";
+adj[26]="different";
+n[27]="opinion";
+v[27]="avoid";
+adj[27]="clear";
+n[28]="kitchen";
+v[28]="sail";
+adj[28]="flat";
+n[29]="south";
+v[29]="receive";
+adj[29]="excited";
+n[30]="leg";
+v[30]="invite";
+adj[30]="beautiful";
+                 /*end of A1 part*/
+n[31]="access";
+v[31]="admire";
+adj[31]="additional";
+n[32]="ceiling";
+v[32]="bake";
+adj[32]="careless";
+n[33]="curtain";
+v[33]="confirm";
+adj[33]="cruel";
+n[34]="edge";
+v[34]="hire";
+adj[34]="effective";
+n[35]="flood";
+v[35]="occur";
+adj[35]="generous";
+n[36]="touch";
+v[36]="prove";
+adj[36]="incredible";
+n[37]="soil";
+v[37]="separate";
+adj[37]="pale";
+n[38]="age";
+v[38]="share";
+adj[38]="poisonous";
+n[39]="chain";
+v[39]="participate";
+adj[39]="rare";
+n[40]="custom";
+v[40]="reject";
+adj[40]="advanced";
+n[41]="emergency";
+v[41]="survive";
+adj[41]="competitive";
+n[42]="force";
+v[42]="trade";
+adj[42]="possible";
+n[43]="channel";
+v[43]="vote";
+adj[43]="equal";
+n[44]="announcement";
+v[44]="afford";
+adj[44]="local";
+n[45]="exhibition";
+v[45]="wave";
+adj[45]="grateful";
+n[46]="click";
+v[46]="repeat";
+adj[46]="main";
+n[47]="arrival";
+v[47]="convince";
+adj[47]="current";
+n[48]="attitude";
+v[48]="breathe";
+adj[48]="perfect";
+n[49]="departure";
+v[49]="pour";
+adj[49]="average";
+n[50]="battle";
+v[50]="spread";
+adj[50]="confident";
+n[51]="coin";
+v[51]="respect";
+adj[51]="far";
+n[52]="diamond";
+v[52]="iron";
+adj[52]="honest";
+n[53]="board";
+v[53]="annoy";
+adj[53]="mental";
+n[54]="conclusion";
+v[54]="cheat";
+adj[54]="personal";
+n[55]="doubt";
+v[55]="deal";
+adj[55]="frozen";
+n[56]="bubble";
+v[56]="pretend";
+adj[56]="nuclear";
+n[57]="cream";
+v[57]="suffer";
+adj[57]="basic";
+n[58]="face";
+v[58]="measure";
+adj[58]="direct";
+n[59]="horror";
+v[59]="attract";
+adj[59]="continuous";
+n[60]="sample";
+v[60]="climb";
+adj[60]="illegal";
+                       /*end of B1 part*/
+n[61]="absence";
+v[61]="adhere";
+adj[61]="absent";
+n[62]="availability";
+v[62]="conserve";
+adj[62]="casual";
+n[63]="beam";
+v[63]="execute";
+adj[63]="curious";
+n[64]="copper";
+v[64]="hint";
+adj[64]="fierce";
+n[65]="distinction";
+v[65]="merge";
+adj[65]="immense";
+n[66]="embassy";
+v[66]="comply";
+adj[66]="moderate";
+n[67]="accordance";
+v[67]="neglect";
+adj[67]="simultaneous";
+n[68]="peasant";
+v[68]="reign";
+adj[68]="supportive";
+n[69]="probe";
+v[69]="resist";
+adj[69]="civic";
+n[70]="bat";
+v[70]="expire";
+adj[70]="amateur";
+n[71]="flaw";
+v[71]="appeal";
+adj[71]="decent";
+n[72]="pump";
+v[72]="conceal";
+adj[72]="flexible";
+n[73]="adjustment";
+v[73]="implement";
+adj[73]="occasional";
+n[74]="ray";
+v[74]="bless";
+adj[74]="spectacular";
+n[75]="injection";
+v[75]="proclaim";
+adj[75]="superb";
+n[76]="rifle";
+v[76]="fade";
+adj[76]="coastal";
+n[77]="alert";
+v[77]="pronounce";
+adj[77]="respective";
+n[78]="beast";
+v[78]="reassure";
+adj[78]="initial";
+n[79]="chaos";
+v[79]="interfere";
+adj[79]="divine";
+n[80]="insulation";
+v[80]="conquer";
+adj[80]="authentic";
+n[81]="rival";
+v[81]="convict";
+adj[81]="fragile";
+n[82]="ash";
+v[82]="earn";
+adj[82]="robust";
+n[83]="collaboration";
+v[83]="burst";
+adj[83]="complex";
+n[84]="merchant";
+v[84]="justify";
+adj[84]="guilty";
+n[85]="sin";
+v[85]="rebel";
+adj[85]="invisible";
+n[86]="threshold";
+v[86]="halt";
+adj[86]="bizarre";
+n[87]="confirmation";
+v[87]="collaborate";
+adj[87]="eager";
+n[88]="warehouse";
+v[88]="remind";
+adj[88]="hostile";
+n[89]="miracle";
+v[89]="skip";
+adj[89]="corresponding";
+n[90]="assembly";
+v[90]="resemble";
+adj[90]="boundary";
+                    /*end of C1 part*/
+
+
+nn[1]="поезд";
+vv[1]="позволять";
+adjadj[1]="взрослый";
+nn[2]="зонтик";
+vv[2]="появляться";
+adjadj[2]="большой";
+nn[3]="текст";
+vv[3]="бронировать";
+adjadj[3]="коричневый";
+nn[4]="команда";
+vv[4]="управлять";
+adjadj[4]="полный (набор)";
+nn[5]="действие";
+vv[5]="печатать";
+adjadj[5]="сложный";
+nn[6]="сосед";
+vv[6]="применять";
+adjadj[6]="дорогой";
+nn[7]="ничто";
+vv[7]="поднимать";
+adjadj[7]="свободный";
+nn[8]="вода";
+vv[8]="понижать";
+adjadj[8]="голодный";
+nn[9]="деревня";
+vv[9]="осознавать";
+adjadj[9]="отрицательный";
+nn[10]="век";
+vv[10]="закрывать";
+adjadj[10]="черный";
+nn[11]="парта";
+vv[11]="платить";
+adjadj[11]="холодный";
+nn[12]="жизнь";
+vv[12]="отчитываться";
+adjadj[12]="занятой";
+nn[13]="север";
+vv[13]="искать";
+adjadj[13]="грязный";
+nn[14]="официант";
+vv[14]="кататься на лыжах";
+adjadj[14]="известный";
+nn[15]="муж";
+vv[15]="учить";
+adjadj[15]="удивительный";
+nn[16]="окно";
+vv[16]="предоставлять";
+adjadj[16]="голубой";
+nn[17]="свет";
+vv[17]="собирать";
+adjadj[17]="счастливый";
+nn[18]="дерево";
+vv[18]="трясти";
+adjadj[18]="вкусный";
+nn[19]="остров";
+vv[19]="организовывать";
+adjadj[19]="важный";
+nn[20]="стол";
+vv[20]="решать";
+adjadj[20]="быстрый";
+nn[21]="работа";
+vv[21]="ехать верхом";
+adjadj[21]="дешевый";
+nn[22]="пространство";
+vv[22]="узнавать";
+adjadj[22]="плохой";
+nn[23]="дождь";
+vv[23]="бросать";
+adjadj[23]="здоровый";
+nn[24]="ключ";
+vv[24]="плакать";
+adjadj[24]="окончательный";
+nn[25]="картина";
+vv[25]="использовать";
+adjadj[25]="скучающий";
+nn[26]="лев";
+vv[26]="спать";
+adjadj[26]="другой";
+nn[27]="мнение";
+vv[27]="избегать";
+adjadj[27]="ясный";
+nn[28]="кухня";
+vv[28]="плыть";
+adjadj[28]="плоский";
+nn[29]="юг";
+vv[29]="получать";
+adjadj[29]="взволнованный";
+nn[30]="нога";
+vv[30]="приглашать";
+adjadj[30]="прекрасный";
+					/*end of A1 part*/
+nn[31]="доступ";
+vv[31]="восхищаться";
+adjadj[31]="дополнительный";
+nn[32]="потолок";
+vv[32]="выпекать";
+adjadj[32]="невнимательный";
+nn[33]="штора";
+vv[33]="подтверждать";
+adjadj[33]="жестокий";
+nn[34]="край";
+vv[34]="нанимать";
+adjadj[34]="эффективный";
+nn[35]="наводнение";
+vv[35]="случаться";
+adjadj[35]="великодушный";
+nn[36]="прикосновение";
+vv[36]="доказывать";
+adjadj[36]="невероятный";
+nn[37]="почва";
+vv[37]="разделять";
+adjadj[37]="бледный";
+nn[38]="возраст";
+vv[38]="делиться";
+adjadj[38]="ядовитый";
+nn[39]="цепь";
+vv[39]="принимать участие";
+adjadj[39]="редкий";
+nn[40]="обычай";
+vv[40]="отклонять";
+adjadj[40]="продвинутый";
+nn[41]="экстренный случай";
+vv[41]="выживать";
+adjadj[41]="соревновательный";
+nn[42]="сила";
+vv[42]="торговаться";
+adjadj[42]="возможный";
+nn[43]="канал";
+vv[43]="голосовать";
+adjadj[43]="равный";
+nn[44]="объявление";
+vv[44]="позволять себе";
+adjadj[44]="местный";
+nn[45]="выставка";
+vv[45]="махать";
+adjadj[45]="благодарный";
+nn[46]="щелчок";
+vv[46]="повторять";
+adjadj[46]="главный";
+nn[47]="прибытие";
+vv[47]="убеждать";
+adjadj[47]="текущий";
+nn[48]="отношение";
+vv[48]="дышать";
+adjadj[48]="совершенный";
+nn[49]="отправление";
+vv[49]="наливать";
+adjadj[49]="обычный";
+nn[50]="битва";
+vv[50]="распространять";
+adjadj[50]="уверенный";
+nn[51]="монета";
+vv[51]="уважать";
+adjadj[51]="дальний";
+nn[52]="алмаз";
+vv[52]="гладить";
+adjadj[52]="честный";
+nn[53]="доска";
+vv[53]="раздражать";
+adjadj[53]="умственный";
+nn[54]="заключение";
+vv[54]="жульничать";
+adjadj[54]="личный";
+nn[55]="сомнение";
+vv[55]="иметь дело";
+adjadj[55]="замерзший";
+nn[56]="пузырь";
+vv[56]="притворяться";
+adjadj[56]="ядерный";
+nn[57]="крем";
+vv[57]="страдать";
+adjadj[57]="основной";
+nn[58]="лицо";
+vv[58]="измерять";
+adjadj[58]="прямой";
+nn[59]="ужас";
+vv[59]="привлекать";
+adjadj[59]="продолжающийся";
+nn[60]="образец";
+vv[60]="взбираться";
+adjadj[60]="незаконный";
+					/*end of B1 part*/
+nn[61]="отсутствие";
+vv[61]="придерживаться";
+adjadj[61]="отсутствующий";
+nn[62]="доступность";
+vv[62]="сохранять";
+adjadj[62]="повседневный";
+nn[63]="луч";
+vv[63]="исполнять";
+adjadj[63]="любознательный";
+nn[64]="медь";
+vv[64]="намекать";
+adjadj[64]="яростный";
+nn[65]="отличине";
+vv[65]="объединять";
+adjadj[65]="безмерный";
+nn[66]="посольство";
+vv[66]="соблюдать";
+adjadj[66]="умеренный";
+nn[67]="соответствие";
+vv[67]="пренебрегать";
+adjadj[67]="одновременный";
+nn[68]="крестьянин";
+vv[68]="править";
+adjadj[68]="опорный";
+nn[69]="зонд";
+vv[69]="сопротивляться";
+adjadj[69]="гражданский";
+nn[70]="летучая мышь";
+vv[70]="истекать";
+adjadj[70]="любительский";
+nn[71]="недостаток";
+vv[71]="взывать";
+adjadj[71]="честный";
+nn[72]="насос";
+vv[72]="утаивать";
+adjadj[72]="гибкий";
+nn[73]="настройка";
+vv[73]="воплощать";
+adjadj[73]="нерегулярный";
+nn[74]="луч";
+vv[74]="благославлять";
+adjadj[74]="зрелищный";
+nn[75]="укол";
+vv[75]="провозглашать";
+adjadj[75]="превосходный";
+nn[76]="ружье";
+vv[76]="увядать";
+adjadj[76]="прибрежный";
+nn[77]="тревога";
+vv[77]="произносить";
+adjadj[77]="соответствующий";
+nn[78]="зверь";
+vv[78]="обнадеживать";
+adjadj[78]="изначальный";
+nn[79]="хаос";
+vv[79]="вмешиваться";
+adjadj[79]="божественный";
+nn[80]="изоляция";
+vv[80]="завоевывать";
+adjadj[80]="оригинальный";
+nn[81]="соперник";
+vv[81]="осуждать";
+adjadj[81]="хрупкий";
+nn[82]="прах";
+vv[82]="зарабатывать";
+adjadj[82]="здоровый";
+nn[83]="сотрудничество";
+vv[83]="разразиться";
+adjadj[83]="составной";
+nn[84]="купец";
+vv[84]="оправдывать";
+adjadj[84]="виновный";
+nn[85]="грех";
+vv[85]="восставать";
+adjadj[85]="невидимый";
+nn[86]="порог";
+vv[86]="остановиться";
+adjadj[86]="необычный";
+nn[87]="подтверждение";
+vv[87]="сотрудничать";
+adjadj[87]="жаждущий";
+nn[88]="склад";
+vv[88]="напоминать";
+adjadj[88]="враждебный";
+nn[89]="чудо";
+vv[89]="пропустить";
+adjadj[89]="равнозначный";
+nn[90]="узел в сборе";
+vv[90]="напоминать кого-то";
+adjadj[90]="пограничный";
+
+var AAA=0;
+var BBB=0;
+var CCC=0;
+var Ap=0;
+var Bp=0;
+var Cp=0;
+var Apercent;
+var Bpercent;
+var Cpercent;
+var AT=0;
+var BT=0;
+var CT=0;
+var A_Clicks=0;
+var B_Clicks=0;
+var C_Clicks=0;
+var ABC=0;
+var ApercentVar=0;
+var BpercentVar=0;
+var CpercentVar=0;
+var ABCpercentVar=0;
+var FMVar=[];
+var FM;
+
+function AfuncA (){
+function Afork0(){if (A_Clicks==0){FM=0;}}
+Afork0();
+function Afork1(){if (A_Clicks==1 && ApercentVar==1){FM=0;}else if (A_Clicks==1 && ApercentVar==2){FM=1;}}
+Afork1();
+function Afork2(){if (A_Clicks==2 && ApercentVar==1){Afork1;}else if (A_Clicks==2 && ApercentVar==2){FM=2;}}
+Afork2();
+}
+function BfuncB(){
+function Bfork0(){if (B_Clicks==0){AfuncA();}}
+Bfork0();
+function Bfork1(){if (B_Clicks==1 && BpercentVar==1){Bfork0();}else if (B_Clicks==1 && BpercentVar==2){FM=3;}}
+Bfork1();
+function Bfork2(){if (B_Clicks==2 && BpercentVar==1){Bfork1;}else if (B_Clicks==2 && BpercentVar==2){FM=4;}}
+Bfork2();
+}
+function CfuncC(){
+function Cfork0(){if (C_Clicks==0){BfuncB();}}
+Cfork0();
+function Cfork1(){if (C_Clicks==1 && CpercentVar==1){Cfork0();}else if (C_Clicks==1 && CpercentVar==2){FM=5;}}
+Cfork1();
+function Cfork2(){if (C_Clicks==2 && ApercentVar==1){Bfork1;}else if (C_Clicks==2 && ApercentVar==2){FM=6;}}
+Cfork2();
+}
+                                                                      /*FGrenn-FRed Section*/
+function FGrenn(){
+    NNfinal=NNshow.innerHTML;
+    if (NNshow.textContent !=""){
+    btnNoun[NNfinal].disabled="true";
+    btnNoun[NNfinal].style.backgroundImage='linear-gradient(45deg, rgba(143, 188, 143, 0.8), rgba(143, 188, 143, 0.8))';
+    btnNoun[NNfinal].style.borderColor="#12e536";
+    btnNoun[NNfinal].style['border-radius']="10px";
+    btnNoun[NNfinal].style['box-shadow']="2px 2px 7px 5px #11bd9d";
+    }
+   else if(VNshow.textContent !=""){
+    VNfinal=VNshow.innerHTML;
+    btnVerb[VNfinal].disabled="true";
+    btnVerb[VNfinal].style.backgroundImage='linear-gradient(45deg, rgba(143, 188, 143, 0.8), rgba(143, 188, 143, 0.8))';
+    btnVerb[VNfinal].style.borderColor="#12e536";
+    btnVerb[VNfinal].style['border-radius']="10px";
+    btnVerb[VNfinal].style['box-shadow']="2px 2px 7px 5px #11bd9d";    
+    }
+    else if(AdjNshow.textContent !=""){
+    AdjNfinal=AdjNshow.innerHTML;
+    btnAdj[AdjNfinal].disabled="true";
+    btnAdj[AdjNfinal].style.backgroundImage='linear-gradient(45deg, rgba(143, 188, 143, 0.8), rgba(143, 188, 143, 0.8))';
+    btnAdj[AdjNfinal].style.borderColor="#12e536";
+    btnAdj[AdjNfinal].style['border-radius']="10px";
+    btnAdj[AdjNfinal].style['box-shadow']="2px 2px 7px 5px #11bd9d";    
+    }
+        TextFinalMain.style.visibility="hidden";
+        TextFinal1.style.backgroundColor="";
+        TextFinal2.style.backgroundColor="";
+        TextFinal3.style.backgroundColor="";
+        Main2.style.zIndex="1";
+}
+
+function FRed(){
+    if (NNshow.textContent !=""){
+    NNfinal=NNshow.innerHTML;
+    btnNoun[NNfinal].disabled="true";
+    btnNoun[NNfinal].style.backgroundImage='linear-gradient(45deg, rgba(242, 17, 17, 0.9), rgba(242, 17, 17, 0.8))';
+    btnNoun[NNfinal].style.borderColor="black";
+        
+    }
+    else if(VNshow.textContent !=""){
+        VNfinal=VNshow.innerHTML;
+    btnVerb[VNfinal].disabled="true";
+    btnVerb[VNfinal].style.backgroundImage='linear-gradient(45deg, rgba(242, 17, 17, 0.9), rgba(242, 17, 17, 0.8))';
+    btnVerb[VNfinal].style.borderColor="black";    
+    }
+    else if(AdjNshow.textContent !=""){
+        AdjNfinal=AdjNshow.innerHTML;
+    btnAdj[AdjNfinal].disabled="true";
+    btnAdj[AdjNfinal].style.backgroundImage='linear-gradient(45deg, rgba(242, 17, 17, 0.9), rgba(242, 17, 17, 0.8))';
+    btnAdj[AdjNfinal].style.borderColor="black";    
+    }
+        TextFinalMain.style.visibility="hidden";
+        TextFinal1.style.backgroundColor="";
+        TextFinal2.style.backgroundColor="";
+        TextFinal3.style.backgroundColor="";
+        Main2.style.zIndex="1";
+}
+/*function M2QPlus(){
+    if (ContainerN<=3){
+        Main2QuantVarAA +=1;
+        AA_Main2Quant.innerHTML=Main2QuantVarAA;       
+    }else if (ContainerN>3 && ContainerN<=6){
+         Main2QuantVarBB +=1;
+        BB_Main2Quant.innerHTML=Main2QuantVarBB;        
+    }else if (ContainerN>6 && ContainerN<=9){
+                Main2QuantVarCC +=1;
+        CC_Main2Quant.innerHTML=Main2QuantVarCC; 
+    }
+}*/
+function finalbutton1(){                                         /*finalbutton1*/
+
+        var Fb1=TextFinal1.innerHTML;
+        var Ft1=Text1.innerHTML;
+    if (Fb1 == Ft1){
+        /*AnsCor+=1;
+        AnswersCorrect.innerHTML=AnsCor;*/
+
+    if (ContainerN<=3){
+        Main2QuantVarAA +=1;
+        AA_AnsCorrect +=1;
+                AA_Main2Quant.innerHTML=Main2QuantVarAA;
+                AA_AnsCor.innerHTML=AA_AnsCorrect;   
+}
+    else if (ContainerN>3 && ContainerN<=6){
+        Main2QuantVarBB +=1;
+        BB_AnsCorrect +=1;
+                BB_Main2Quant.innerHTML=Main2QuantVarBB;
+                BB_AnsCor.innerHTML=BB_AnsCorrect;
+    }
+    else if(ContainerN>6 && ContainerN<=9){
+            Main2QuantVarCC +=1;
+           CC_AnsCorrect +=1;
+                CC_Main2Quant.innerHTML=Main2QuantVarCC;
+                CC_AnsCor.innerHTML=CC_AnsCorrect; 
+    }
+FGrenn();
+
+                                            }else{
+                                                    TextFinal1.style.backgroundColor="red";
+                                                   /* AnsWr+=1;
+                                                    AnswersWrong.innerHTML=AnsWr;*/
+                                            if (ContainerN<=3){
+                                                            Main2QuantVarAA +=1;
+                                                    AA_AnsWrong +=1;
+                                                            AA_AnsWr.innerHTML=AA_AnsWrong;
+                                                                    AA_Main2Quant.innerHTML=Main2QuantVarAA;
+                                            }
+                                                else if (ContainerN>3 && ContainerN<=6){
+                                                            BB_AnsCorrect +=1;
+                                                    BB_AnsWrong +=1;
+                                                            BB_AnsWr.innerHTML=BB_AnsWrong;
+                                                                            BB_Main2Quant.innerHTML=Main2QuantVarBB;
+                                                }
+                                                else if(ContainerN>6 && ContainerN<=9){
+                                                       CC_AnsWrong +=1;
+                                                               CC_AnsWrong +=1;
+                                                            CC_AnsWr.innerHTML=CC_AnsWrong;
+                                                                            CC_Main2Quant.innerHTML=Main2QuantVarCC;
+                                                }
+                                                FRed();
+                                            }
+                                            AnsTot+=1;
+                                            AnswersTotal.innerHTML=AnsTot;
+
+}
+function finalbutton2(){                                    /*finalbutton2*/
+    var Fb2=TextFinal2.innerHTML;
+    var Ft2=Text1.innerHTML;
+
+    if (Fb2 == Ft2){
+    /*AnsCor+=1;
+    AnswersCorrect.innerHTML=AnsCor;*/
+
+    if (ContainerN<=3){
+     AA_AnsCorrect +=1;
+     Main2QuantVarAA +=1;
+                AA_AnsCor.innerHTML=AA_AnsCorrect;
+                AA_Main2Quant.innerHTML=Main2QuantVarAA;
+}
+else if (ContainerN>3 && ContainerN<=6){
+        Main2QuantVarBB +=1;
+        BB_AnsCorrect +=1;
+                BB_Main2Quant.innerHTML=Main2QuantVarBB;
+                BB_AnsCor.innerHTML=BB_AnsCorrect;
+    }
+    else if(ContainerN>6 && ContainerN<=9){
+        Main2QuantVarCC +=1;
+        CC_AnsCorrect +=1;
+                CC_Main2Quant.innerHTML=Main2QuantVarCC;
+                CC_AnsCor.innerHTML=CC_AnsCorrect; 
+    }
+    FGrenn();
+                                                                }else{
+                                                                    TextFinal2.style.backgroundColor="red";
+                                                                    /*AnsWr+=1;
+                                                                    AnswersWrong.innerHTML=AnsWr;*/
+                                                                    if (ContainerN<=3){
+                                                                     AA_AnsWrong +=1;
+                                                                     Main2QuantVarAA +=1;
+                                                                                AA_AnsWr.innerHTML=AA_AnsWrong;
+                                                                                AA_Main2Quant.innerHTML=Main2QuantVarAA;
+                                                                }
+                                                                else if (ContainerN>3 && ContainerN<=6){
+                                                                    BB_AnsWrong +=1;
+                                                                    Main2QuantVarBB +=1;
+                                                                                BB_AnsWr.innerHTML=BB_AnsWrong;
+                                                                                BB_Main2Quant.innerHTML=Main2QuantVarBB;
+                                                                    }
+                                                                else if(ContainerN>6 && ContainerN<=9){
+                                                                           CC_AnsWrong +=1;
+                                                                           Main2QuantVarCC +=1;
+                                                                                CC_AnsWr.innerHTML=CC_AnsWrong;
+                                                                                CC_Main2Quant.innerHTML=Main2QuantVarCC;
+                                                                    }
+                                                                    FRed();
+                                                                }
+                                                                AnsTot+=1;
+                                                                AnswersTotal.innerHTML=AnsTot;
+}
+ function finalbutton3(){                               /*finalbutton3*/
+    var Fb3=TextFinal3.innerHTML;
+    var Ft3=Text1.innerHTML;
+    if (Fb3 == Ft3){
+    /*AnsCor+=1;
+    AnswersCorrect.innerHTML=AnsCor;*/
+
+if (ContainerN<=3){
+     AA_AnsCorrect +=1;
+     Main2QuantVarAA +=1;
+                AA_AnsCor.innerHTML=AA_AnsCorrect;   
+                AA_Main2Quant.innerHTML=Main2QuantVarAA;
+}
+else if (ContainerN>3 && ContainerN<=6){
+    BB_AnsCorrect +=1;
+    Main2QuantVarBB +=1;
+                BB_AnsCor.innerHTML=BB_AnsCorrect;
+                BB_Main2Quant.innerHTML=Main2QuantVarBB;
+    }
+else if(ContainerN>6 && ContainerN<=9){
+           CC_AnsCorrect +=1;
+           Main2QuantVarCC +=1;
+                CC_AnsCor.innerHTML=CC_AnsCorrect; 
+                CC_Main2Quant.innerHTML=Main2QuantVarCC;
+    }
+    FGrenn();
+                                                                        }else{
+                                                                            TextFinal3.style.backgroundColor="red";
+                                                                            /*AnsWr+=1;
+                                                                            AnswersWrong.innerHTML=AnsWr;*/
+                                                                            if (ContainerN<=3){
+                                                                             AA_AnsWrong +=1;
+                                                                             Main2QuantVarAA +=1;
+                                                                                        AA_AnsWr.innerHTML=AA_AnsWrong;   
+                                                                                        AA_Main2Quant.innerHTML=Main2QuantVarAA;
+                                                                        }
+                                                                        else if (ContainerN>3 && ContainerN<=6){
+                                                                            BB_AnsWrong +=1;
+                                                                            Main2QuantVarBB +=1;
+                                                                                        BB_AnsWr.innerHTML=BB_AnsWrong;
+                                                                                        BB_Main2Quant.innerHTML=Main2QuantVarBB;
+                                                                            }
+                                                                        else if(ContainerN>6 && ContainerN<=9){
+                                                                                   CC_AnsWrong +=1;
+                                                                                   Main2QuantVarCC +=1;
+                                                                                        CC_AnsWr.innerHTML=CC_AnsWrong; 
+                                                                                        CC_Main2Quant.innerHTML=Main2QuantVarCC;
+                                                                            }
+                                                                            FRed();
+                                                                        }
+                                                                        AnsTot+=1;
+                                                                        AnswersTotal.innerHTML=AnsTot;
+} 
+
+function getTdValue() {
+    	 document.getElementById("Main1").style.visibility="visible";
+    	  document.getElementById("Main2").style.visibility="visible";
+
+	  let nounblocks = document.getElementsByClassName( "nounclass" ); // находим элементы с тегом th
+	  for( let i = 0; i < nounblocks.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    /*nounblocks[i].style.border = "1px solid red"; // устанавливаем сплошную границу размером 1 пиксель зеленого цвета*/
+	    nounblocks[i].innerHTML = n[i+1];
+	  }	
+	  	  let verbblocks = document.getElementsByClassName( "verbclass" ); // находим элементы с тегом th
+	  for( let i = 0; i < verbblocks.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    /*verbblocks[i].style.border = "1px solid red"; // устанавливаем сплошную границу размером 1 пиксель зеленого цвета*/
+	    verbblocks[i].innerHTML = v[i+1];
+	  }	
+	  	  let adjblocks = document.getElementsByClassName( "adjclass" ); // находим элементы с тегом th
+	  for( let i = 0; i < adjblocks.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    /*adjblocks[i].style.border = "1px solid red"; // устанавливаем сплошную границу размером 1 пиксель зеленого цвета*/
+	    adjblocks[i].innerHTML = adj[i+1];
+	  }	
+}
+function Randomizer (min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+      }
+function RandomChanger(){
+    CCVarInitial=document.getElementById("CounterClicksNumToShow").innerHTML=Randomizer(1,6);
+}
+function UniversalRandomizer(){
+    AnswersTotalTextVar+=1;
+    AnswersTotal.innerHTML=AnswersTotalTextVar;
+if (CCVar==CCVarInitial){
+Main2.style.zIndex="3";
+TextFinalMain.style.visibility="visible";
+RandomChanger();
+CCVar=0;
+}
+}
+function ABCTotal(){
+if (ContainerN<=3){
+    A_TotalVar+=1;
+    AA_AnsTot.innerHTML=A_TotalVar;
+}else if(ContainerN>3 && ContainerN<=6){
+    B_TotalVar+=1;
+    BB_AnsTot.innerHTML=B_TotalVar;   
+}else if (ContainerN>6 && ContainerN<=9){
+    C_TotalVar+=1;
+    CC_AnsTot.innerHTML=C_TotalVar;   
+}
+}
+                                                                        /*Beginning of NOUN part*/
+let btnNoun = document.querySelectorAll('.nounclass');
+for (let i = 0; i < btnNoun.length; i++) {
+btnNoun[i].addEventListener('click', function() {
+           
+      var Eng1noun=n[i+1];
+      var Rus1noun=nn[i+1];
+      var Eng2noun;
+      var Rus2noun;
+      var Eng3noun;
+      var Rus3noun;
+      var Eng1Nnoun=i+1;
+      var Rus1Nnoun=i+1;
+      var Eng2Nnoun;
+      var Rus2Nnoun;
+      var Eng3Nnoun;
+      var Rus3Nnoun;
+      var ShuffleVar1;
+      var ShuffleVar2;
+      var ShuffleVar3;
+
+CCVar+=1;
+TextFinalEng.innerHTML=Eng1noun;
+    Text1.innerHTML=nn[i+1];
+    ShuffleVar1Noun=Text1.innerHTML;
+    Number1.innerHTML=Eng1Nnoun;
+/*AnswersCorrect.innerHTML=Eng1noun;*/
+
+ABCTotal();
+NNshow.innerHTML=i;
+VNshow.innerHTML="";
+AdjNshow.innerHTML="";
+var n1 = n.slice();
+n1.splice(Eng1Nnoun, 1);
+var nn1=nn.slice();
+nn1.splice(Eng1Nnoun, 1);
+
+var n2 = n1.slice();
+var nn2=nn1.slice();
+
+function VarEng2ChangeNoun(min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+      }
+function showTheNumberEng2NNoun(){
+    Eng2Nnoun=document.getElementById("Number2").innerHTML=VarEng2ChangeNoun(1,90);
+    Text2.innerHTML=nn1[Eng2Nnoun];
+          ShuffleVar2Noun=Text2.innerHTML;
+}
+    Eng2noun=Text2.innerHTML;
+
+showTheNumberEng2NNoun();
+
+          Number2.innerHTML=Eng2Nnoun;
+          Text2.innerHTML=nn1[Eng2Nnoun];
+
+n2.splice(Eng2Nnoun, 1);
+nn2.splice(Eng2Nnoun, 1);
+
+
+function VarEng3ChangeNoun(min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+      }
+function showTheNumberEng3NNoun(){
+Eng3Nnoun=document.getElementById("Number3").innerHTML=VarEng3ChangeNoun(1,89);
+Text3.innerHTML=nn2[Eng3Nnoun];
+      ShuffleVar3Noun=Text3.innerHTML;
+}    
+
+showTheNumberEng3NNoun();
+
+Text1_3Vars.innerHTML=ShuffleVar1Noun;
+Text2_3Vars.innerHTML=ShuffleVar2Noun;
+Text3_3Vars.innerHTML=ShuffleVar3Noun;
+      var ArrayShuffleNoun=[];
+      ArrayShuffleNoun.push(ShuffleVar1Noun);
+      ArrayShuffleNoun.push(ShuffleVar2Noun);
+      ArrayShuffleNoun.push(ShuffleVar3Noun);
+
+function ArrayShuffleRandomNoun() {
+  ArrayShuffleNoun.sort(function(a, b){return 0.5 - Math.random()});
+
+}
+
+      
+ArrayShuffleRandomNoun();
+
+TextFinal1.innerHTML=ArrayShuffleNoun[0];
+TextFinal2.innerHTML=ArrayShuffleNoun[1];
+TextFinal3.innerHTML=ArrayShuffleNoun[2];
+CounterClicksClicks.innerHTML=CCVar;
+
+UniversalRandomizer();
+NNfinal=NNshow.innerHTML;
+    function btnNounDisabled(){
+       btnNoun[NNfinal].disabled="true";
+    }
+btnNounDisabled();
+  })
+
+}
+                                /*End of NOUN part*/
+                                                                     /*Beginning of VERB part*/
+let btnVerb = document.querySelectorAll('.verbclass');
+for (let i = 0; i < btnVerb.length; i++) {
+
+  btnVerb[i].addEventListener('click', function() {
+    	 /* TextFinalMain.style.visibility="visible";*/
+      var Eng1Verb=v[i+1];
+      var Rus1Verb=vv[i+1];
+      var Eng2Verb;
+      var Rus2Verb;
+      var Eng3Verb;
+      var Rus3Verb;
+      var Eng1NVerb=i+1;
+      var Rus1NVerb=i+1;
+      var Eng2NVerb;
+      var Rus2NVerb;
+      var Eng3NVerb;
+      var Rus3NVerb;
+      var ShuffleVar1;
+      var ShuffleVar2;
+      var ShuffleVar3;
+CCVar+=1;
+
+TextFinalEng.innerHTML=Eng1Verb;
+      Text1.innerHTML=vv[i+1];
+            ShuffleVar1Verb=Text1.innerHTML;
+      Number1.innerHTML=Eng1NVerb;
+/*AnswersCorrect.innerHTML=Eng1Verb;*/
+ABCTotal();
+NNshow.innerHTML="";
+VNshow.innerHTML=i;
+AdjNshow.innerHTML="";
+var v1 = v.slice();
+v1.splice(Eng1NVerb, 1);
+var vv1=vv.slice();
+vv1.splice(Eng1NVerb, 1);
+
+var v2 = v1.slice();
+var vv2=vv1.slice();
+
+function VarEng2ChangeVerb(min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+      }
+function showTheNumberEng2NVerb(){
+    Eng2NVerb=document.getElementById("Number2").innerHTML=VarEng2ChangeVerb(1,90);
+    Text2.innerHTML=vv1[Eng2NVerb];
+          ShuffleVar2Verb=Text2.innerHTML;
+}
+    Eng2Verb=Text2.innerHTML;
+
+showTheNumberEng2NVerb();
+
+          Number2.innerHTML=Eng2NVerb;
+          Text2.innerHTML=vv1[Eng2NVerb];
+
+v2.splice(Eng2NVerb, 1);
+vv2.splice(Eng2NVerb, 1);
+
+
+function VarEng3ChangeVerb(min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+      }
+function showTheNumberEng3NVerb(){
+Eng3NVerb=document.getElementById("Number3").innerHTML=VarEng3ChangeVerb(1,89);
+Text3.innerHTML=vv2[Eng3NVerb];
+      ShuffleVar3Verb=Text3.innerHTML;
+
+}    
+
+showTheNumberEng3NVerb();
+
+Text1_3Vars.innerHTML=ShuffleVar1Verb;
+Text2_3Vars.innerHTML=ShuffleVar2Verb;
+Text3_3Vars.innerHTML=ShuffleVar3Verb;
+      var ArrayShuffleVerb=[];
+      ArrayShuffleVerb.push(ShuffleVar1Verb);
+      ArrayShuffleVerb.push(ShuffleVar2Verb);
+      ArrayShuffleVerb.push(ShuffleVar3Verb);
+
+function ArrayShuffleRandomVerb() {
+  ArrayShuffleVerb.sort(function(a, b){return 0.5 - Math.random()});
+
+}
+
+      
+ArrayShuffleRandomVerb();
+
+TextFinal1.innerHTML=ArrayShuffleVerb[0];
+TextFinal2.innerHTML=ArrayShuffleVerb[1];
+TextFinal3.innerHTML=ArrayShuffleVerb[2];
+CounterClicksClicks.innerHTML=CCVar;
+UniversalRandomizer();
+VNfinal=VNshow.innerHTML;
+    function btnVerbDisabled(){
+       btnVerb[VNfinal].disabled="true";
+    }
+btnVerbDisabled();
+  })
+
+}
+                                /*End of VERB part*/
+                                                         /*Beginning of ADJECTIVE part*/
+let btnAdj = document.querySelectorAll('.adjclass');
+for (let i = 0; i < btnAdj.length; i++) {
+
+  btnAdj[i].addEventListener('click', function() {
+    	  /*TextFinalMain.style.visibility="visible";*/
+      var Eng1Adj=adj[i+1];
+      var Rus1Adj=adjadj[i+1];
+      var Eng2Adj;
+      var Rus2Adj;
+      var Eng3Adj;
+      var Rus3Adj;
+      var Eng1NAdj=i+1;
+      var Rus1NAdj=i+1;
+      var Eng2NAdj;
+      var Rus2NAdj;
+      var Eng3NAdj;
+      var Rus3NAdj;
+      var ShuffleVar1Adj;
+      var ShuffleVar2Adj;
+      var ShuffleVar3Adj;
+CCVar+=1;
+TextFinalEng.innerHTML=Eng1Adj;
+      Text1.innerHTML=adjadj[i+1];
+            ShuffleVar1Adj=Text1.innerHTML;
+      Number1.innerHTML=Eng1NAdj;
+/*AnswersCorrect.innerHTML=Eng1Adj;*/
+ABCTotal();
+NNshow.innerHTML="";
+VNshow.innerHTML="";
+AdjNshow.innerHTML=i;
+var adj1 = adj.slice();
+adj1.splice(Eng1NAdj, 1);
+var adjadj1=adjadj.slice();
+adjadj1.splice(Eng1NAdj, 1);
+
+var adj2 = adj1.slice();
+var adjadj2=adjadj1.slice();
+
+function VarEng2ChangeAdj(min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+      }
+function showTheNumberEng2NAdj(){
+    Eng2NAdj=document.getElementById("Number2").innerHTML=VarEng2ChangeAdj(1,90);
+    Text2.innerHTML=adjadj1[Eng2NAdj];
+          ShuffleVar2Adj=Text2.innerHTML;
+}
+    Eng2Adj=Text2.innerHTML;
+
+showTheNumberEng2NAdj();
+
+          Number2.innerHTML=Eng2NAdj;
+          Text2.innerHTML=adjadj1[Eng2NAdj];
+
+adj2.splice(Eng2NAdj, 1);
+adjadj2.splice(Eng2NAdj, 1);
+
+
+function VarEng3ChangeAdj(min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+      }
+function showTheNumberEng3NAdj(){
+Eng3NAdj=document.getElementById("Number3").innerHTML=VarEng3ChangeAdj(1,89);
+Text3.innerHTML=adjadj2[Eng3NAdj];
+      ShuffleVar3Adj=Text3.innerHTML;
+
+}    
+
+showTheNumberEng3NAdj();
+
+Text1_3Vars.innerHTML=ShuffleVar1Adj;
+Text2_3Vars.innerHTML=ShuffleVar2Adj;
+Text3_3Vars.innerHTML=ShuffleVar3Adj;
+      var ArrayShuffleAdj=[];
+      ArrayShuffleAdj.push(ShuffleVar1Adj);
+      ArrayShuffleAdj.push(ShuffleVar2Adj);
+      ArrayShuffleAdj.push(ShuffleVar3Adj);
+
+function ArrayShuffleRandomAdj() {
+  ArrayShuffleAdj.sort(function(a, b){return 0.5 - Math.random()});
+
+}
+
+      
+ArrayShuffleRandomAdj();
+
+TextFinal1.innerHTML=ArrayShuffleAdj[0];
+TextFinal2.innerHTML=ArrayShuffleAdj[1];
+TextFinal3.innerHTML=ArrayShuffleAdj[2];
+CounterClicksClicks.innerHTML=CCVar;
+UniversalRandomizer();
+AdjNfinal=AdjNshow.innerHTML;
+    function btnAdjDisabled(){
+       btnAdj[AdjNfinal].disabled="true";
+    }
+btnAdjDisabled();
+  })
+
+}
+                                /*End of ADJECTIVE part*/
+
+
+
+                                    /*Table Changer Part*/
+    let ContainerArray=[];
+    ContainerArray[1]=Container1;
+    ContainerArray[2]=Container2;
+    ContainerArray[3]=Container3;
+    ContainerArray[4]=Container4;
+    ContainerArray[5]=Container5;
+    ContainerArray[6]=Container6;
+    ContainerArray[7]=Container7;
+    ContainerArray[8]=Container8;
+    ContainerArray[9]=Container9;
+    var ContainerN=1;
+    var ContainerN1=2;
+function Restart(){
+    ContainerArray[ContainerN].style.visibility="hidden";
+    ContainerArray[ContainerN1].style.visibility="hidden";
+    ContainerN= 1;
+    ContainerN1=2;
+    showBlock.style.position = "absolute";
+        showBlock.style.width="300px";
+        showBlock.style.height="40px";
+            showBlock.style.textAlign="center";
+                showBlock.style.top="0";
+                showBlock.style.right="0";
+                    showBlock.style.border="2px, solid, green";
+                        showBlock.style.paddingTop="2%";
+                            showBlock.style.paddingBottom="2%";
+                                showBlock.style.backgroundColor="#67809f";
+                                showBlock.style.animation = "showBlockAnim 2s";
+                                
+                                start1.style.visibility = "visible";
+                                start1.style.display="inline-block";
+                                NextButton.style.visibility="hidden";
+                                  NextButton.style.display="inline-block";
+showBlockAnim.remove();
+
+
+   /* position: absolute;
+width: 300px;
+text-align: center;
+margin: 10% 40%;
+border: 2px solid green;
+padding-top: 2%;
+padding-bottom: 2%;
+background-color: #67809f;*/
+}
+function start(){
+    ContainerArray[ContainerN].style.visibility="visible";
+    show1.innerHTML=ContainerN;
+show2.innerHTML=ContainerN1;
+    getTdValue();
+    mainButtonsMove();
+}
+function FinalResults(){                                                        /*Final Results*/
+var AFinVar;
+var BFinVar;
+var CFinVar;
+var FinVariable;
+
+
+
+
+/*function AFinVariable(){
+    
+if (A_Clicks==0){    
+    FinVariable=0;}
+else if (A_Clicks==1){
+        FinVariable=1;
+    }
+else if(A_Clicks==2){
+        FinVariable=2;
+    }
+}
+AFinVariable();
+
+
+
+function BFinVariable(){
+if (B_Clicks==0){
+    FinVariable=3;
+}else if (B_Clicks==1){
+    FinVariable=4;}
+else if (B_Clicks==2){
+        FinVariable=5;
+    }
+}
+BFinVariable();
+Bpercent=Math.floor(BB_AnsCorrect/Main2QuantVarBB*100);
+
+
+function CFinVariable(){
+if (C_Clicks==0){
+    FinVariable=6;}
+else if(C_Clicks==1){
+        FinVariable=7;
+    }else if (C_Clicks==2){FinVariable=8;}
+}
+CFinVariable();
+Apercent=Math.floor(BB_AnsCorrect/Main2QuantVarBB*100);
+Bpercent=Math.floor(BB_AnsCorrect/Main2QuantVarBB*100);
+Cpercent=Math.floor(CC_AnsCorrect/Main2QuantVarCC*100);*/
+
+
+FMVar[1]='У вас есть определенные знания, но их еще недостаточно для общения на английском языке.';
+
+FMVar[2]='Понимаете отдельные предложения и часто встречающиеся выражения, связанные с основными сферами жизни (например, основные сведения о себе и членах своей семьи, покупках, устройстве на работу и т. п.). Можете выполнить задачи, связанные с простым обменом информацией на знакомые или бытовые темы. В простых выражениях можете рассказать о себе, своих родных и близких, описать основные аспекты повседневной жизни.';
+
+FMVar[3]='Понимете основные идеи чётких сообщений, сделанных на литературном языке на разные темы, типично возникающие на работе, учёбе, досуге и т. д. Умеете общаться в большинстве ситуаций, которые могут возникнуть во время пребывания в стране изучаемого языка. Можете составить связное сообщение на известные или особо интересующие Вас темы. Можете описать впечатления, события, надежды, стремления, изложить и обосновать своё мнение и планы на будущее.';
+
+FMVar[4]='Понимаете общее содержание сложных текстов на абстрактные и конкретные темы, в том числе узкоспециальные тексты. Говорите достаточно быстро и спонтанно, чтобы постоянно общаться с носителями языка без особых затруднений для любой из сторон. Умеете делать чёткие, подробные сообщения на различные темы и изложить свой взгляд на основную проблему, показать преимущество и недостатки разных мнений.';
+
+FMVar[5]='Понимаете объемные сложные тексты на различную тематику, распознаете скрытое значение. Говорите спонтанно в быстром темпе, не испытывая затруднений с подбором слов и выражений. Гибко и эффективно используете язык для общения в научной и профессиональной деятельности. Можете создать точное, детальное, хорошо выстроенное сообщение на сложные темы, демонстрируя владение моделями организации текста, средствами связи и объединением его элементов.';
+
+FMVar[6]='Понимаете практически любое устное или письменное сообщение, можете составить связный текст, опираясь на несколько устных и письменных источников. Говорите спонтанно с высоким темпом и высокой степенью точности, подчёркивая оттенки значений даже в самых сложных случаях.';
+
+/*function FV_P1or2(){
+    if (FinVariable==1 && )
+}*/
+Main3Results.innerHTML=FMVar[FM];
+FMDiv.innerHTML=FM;
+FinVariableDiv.innerHTML=FinVariable;
+AClicksDiv.innerHTML=A_Clicks;
+}
+function NextButtonFunction(){
+
+            show_3++;
+        show3.innerHTML=show_3;
+        if (show_3==3){
+            function getpercentageA(){
+    Apercent=Math.floor(AA_AnsCorrect/Main2QuantVarAA*100);
+                    ApercentDiv.innerHTML=Apercent;
+            ApercentVar=(Apercent<=70)?1:2;
+            AApercentage.innerHTML=ApercentVar;
+            }
+            getpercentageA();
+            A_Clicks=(A_TotalVar<=30)?0:(A_TotalVar<=60)?1:2;
+        FinVarA.innerHTML=A_Clicks;
+        }else if (show_3==6){
+            function getpercentageB(){
+                    Bpercent=Math.floor(BB_AnsCorrect/Main2QuantVarBB*100);
+            BpercentVar=(Bpercent<=70)?1:2;
+            BBpercentage.innerHTML=BpercentVar;
+            }
+            getpercentageB();
+            B_Clicks=(B_TotalVar<=30) ? 0:(B_TotalVar<=60) ? 1:2;
+                    FinVarB.innerHTML=B_Clicks;
+        }
+        if (show_3 == 9){
+            FinVar_Clicks_FM.style.position='absolute';
+            FinVar_Clicks_FM.style.visibility='hidden';
+            function getpercentageC(){
+                    Cpercent=Math.floor(CC_AnsCorrect/Main2QuantVarCC*100);
+            CpercentVar=(Cpercent<=70)?1:2;
+            CCpercentage.innerHTML=CpercentVar;
+                        C_Clicks=(C_TotalVar<=30) ? 0:(C_TotalVar<=60) ? 1:2;
+                    FinVarC.innerHTML=C_Clicks;
+            }
+            getpercentageC();
+
+    Main1.style.visibility="hidden";
+    Main2.style.visibility="hidden";
+    Main3.style.visibility="visible";
+CfuncC();
+FinalResults();
+
+      }
+    ContainerArray[ContainerN].style.visibility="hidden";
+      ContainerArray[ContainerN1].style.visibility="visible";
+  
+        /*document.getElementById("NextButton").addEventListener('click', function(){
+            let NoT=1;
+            letNoTN=NoT+1;
+DivArray[NoT].style.visibility=hidden;
+DivArray[NoTN].style.visibility=visible;
+)
+}*/
+
+/*show1.innerHTML=ContainerN;*/
+
+        ContainerN++;
+        ContainerN1++;
+        show1.innerHTML=ContainerN;
+        show2.innerHTML=ContainerN1;
+
+}
+
+                                    /*End of Table Changer Part*/
+function mainButtonsMove() {
+  var elem = document.getElementById("showBlock");   
+  var pos = 30;
+  var id = setInterval(frame, 3);
+  function frame() {
+    if (pos == 95) {clearInterval(id);} 
+    else {pos++; elem.style.top = -pos + "px"; elem.style.right = (-pos*4.2) + "px";}
+  }
+  showBlock.style.width="100px";
+  showBlock.style.height="auto";
+
+  start1.style.visibility="hidden";
+  /*start1.style.position="absolute";*/
+  NextButton.style.display="inline";
+  NextButton.style.visibility="visible";
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
